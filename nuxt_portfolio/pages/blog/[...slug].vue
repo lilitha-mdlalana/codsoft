@@ -4,7 +4,8 @@ const { slug } = useRoute().params;
 
 <template>
   <div class="container">
-    <ContentDoc :path="`/blog/${slug}`" v-slot="{ doc }">
+    <ContentDoc :path="`/blog/${slug}`"">
+      <template v-slot="{doc}">
       
       <section
         data-bs-version="5.1"
@@ -19,6 +20,10 @@ const { slug } = useRoute().params;
           </div>
         </div>
       </section>
+      </template>
+      <template #not-found>
+      <h1>Not found</h1>
+      </template>
     </ContentDoc>
   </div>
 </template>

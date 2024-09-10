@@ -6,11 +6,11 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "Software Engineer Portfolio of Lilitha Mdlalana, a software engineering student at WeThinkCode.Explore my software engineering portfolio showcasing innovative projects and technical expertise. From web development to the world of AI, see how I solve complex problems using modern technologies. Connect with me to learn more about my skills in HTML, CSS, JavaScript, React, Node.js, and more. Discover my journey and professional growth in software development!",
+      content:
+        "Software Engineer Portfolio of Lilitha Mdlalana, a software engineering student at WeThinkCode.Explore my software engineering portfolio showcasing innovative projects and technical expertise. From web development to the world of AI, see how I solve complex problems using modern technologies. Connect with me to learn more about my skills in HTML, CSS, JavaScript, React, Node.js, and more. Discover my journey and professional growth in software development!",
     },
   ],
-})
-
+});
 
 const query: QueryBuilderParams = {
   path: "/blog",
@@ -22,7 +22,8 @@ const projects = [
   {
     imgSrc: "/images/portfolio_mockup.png",
     projectTitle: "Portfolio project",
-    projectDescription: "Personal portfolio where I share my projects, thoughts and code snippets built using Nuxt and the Nuxt content module.",
+    projectDescription:
+      "Personal portfolio where I share my projects, thoughts and code snippets built using Nuxt and the Nuxt content module.",
     projectLink: "https://lilitha-mdlalana.netlify.app/",
     githubLink: "https://github.com/lilitha-mdlalana/nuxt_portfolio",
   },
@@ -55,14 +56,12 @@ const projects = [
               <p class="mbr-text mbr-fonts-style mb-4 display-7">
                 👋 Hey there! I'm <em>Lilitha</em>, a
                 <strong>software developer </strong>with a passion for building
-                user interfaces. Welcome to my little corner of the web where I
-                share notes,code snippets and resources on topics that interest
-                me.
+                things using code. Welcome to my little corner of the web where
+                I share notes,code snippets and resources on topics that
+                interest me.
               </p>
               <div class="mbr-section-btn mt-3">
-                <a
-                  class="btn btn-lg btn-black display-7"
-                  href="https://mobiri.se"
+                <a class="btn btn-lg btn-black display-7" href="#contact"
                   >Contact me</a
                 >
               </div>
@@ -335,7 +334,6 @@ const projects = [
 
         <div class="row mbr-gallery">
           <SharedProjectCard
-          
             v-for="project in projects"
             :imgSrc="project.imgSrc"
             :projectTitle="project.projectTitle"

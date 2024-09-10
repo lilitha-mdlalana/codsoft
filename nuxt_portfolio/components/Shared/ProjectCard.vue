@@ -2,10 +2,10 @@
 const props = defineProps({
   imgSrc: String,
   projectTitle: String,
-  projectDescription:String,
-  githubLink:String,
-  projectLink:String,
-})
+  projectDescription: String,
+  githubLink: String,
+  projectLink: String,
+});
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const props = defineProps({
     <div class="card-body">
       <h5 class="card-title">{{ projectTitle }}</h5>
       <p class="card-text">
-        {{projectDescription}}
+        {{ projectDescription }}
       </p>
     </div>
     <div class="card-body">

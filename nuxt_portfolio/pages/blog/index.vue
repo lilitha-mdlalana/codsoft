@@ -10,7 +10,8 @@ useHead({
     {
       hid: "description",
       name: "description",
-      content: "Welcome to my tech blog where I share insights, tutorials, and updates on software development. Explore articles on web development, programming languages, frameworks, and best practices. Join me on my journey as a student programmer and stay updated with the latest trends and tips in the tech world",
+      content:
+        "Welcome to my tech blog where I share insights, tutorials, and updates on software development. Explore articles on web development, programming languages, frameworks, and best practices. Join me on my journey as a student programmer and stay updated with the latest trends and tips in the tech world",
     },
   ],
   link: [
@@ -34,12 +35,17 @@ useHead({
       `,
     },
   ],
-})
+});
 </script>
 
 <template>
-  <section data-bs-version="5.1" class="news08 cid-u8fJMhNm4g" id="news08-2j" data-aos="fade-right"
-    data-aos-duration="2000">
+  <section
+    data-bs-version="5.1"
+    class="news08 cid-u8fJMhNm4g"
+    id="news08-2j"
+    data-aos="fade-right"
+    data-aos-duration="2000"
+  >
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-12 content-head">
